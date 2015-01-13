@@ -10,7 +10,7 @@ class CustomSMTPServer(smtpd.SMTPServer):
         print 'Receiving message from:', peer
         print 'Message addressed from:', mailfrom
         print 'Message addressed to  :', rcpttos
-        print 'Message length        :', len(data)
+        print 'Message data        :', data
         return
 
 class Window(QtGui.QWidget):
